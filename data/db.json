@@ -17,15 +17,14 @@
       "reservedSeats": 50,
       "image": "apuntar a assets...."
     },
-
     {
-    "id": "3",
-    "flightNumber": "CD345",
-    "origin": "City B",
-    "destination": "City D",
-    "capacity": 150,
-    "reservedSeats": 75,
-    "image": "apuntar a assets...."
+      "id": "3",
+      "flightNumber": "CD345",
+      "origin": "City B",
+      "destination": "City D",
+      "capacity": 150,
+      "reservedSeats": 75,
+      "image": "apuntar a assets...."
     },
     {
       "id": "4",
