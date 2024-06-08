@@ -1,9 +1,9 @@
-import { URL_USERS } from "./routes";
-import { read } from "./fetch";
+import { URL_USERS } from "./routes.js";
+import { read } from "./fetch.js";
 
 /**Select the inputs and the form */ 
-const email = document.getElementById('email');
-const password = document.getElementById('password');
+const email = document.getElementById('email1');
+const password = document.getElementById('password1');
 const loginForm = document.getElementById('loginForm');
 
 /**Add event submit to the form to get the login of user an login him/her*/
@@ -22,7 +22,7 @@ loginForm.addEventListener("submit", async (e) =>{
             alert("Login correcto")
 
             /**pass the active session with the id that the user sign in */
-            localStorage.setItem("userId".user[0]["id"])
+            localStorage.setItem("userId",user[0]["id"])
 
             /**depend of the role redirect to the correspondent page */
             switch (user[0]["role"]) {
