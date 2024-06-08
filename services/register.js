@@ -16,7 +16,7 @@ registerForm.addEventListener("submit", (e) =>{
 /**verificate that the email not exist already in the DB */
 async function validation() {
     /**Fetch type get */
-    const data = await read(`${URL_USERS}?email=${emailInput.value}`);
+    const data = await read(`${URL_USERS}?email=${emailInput.value.toLowerCase()}`);
     /**If the list of coincidences is not empty, stop the creation of the new user */
     if (data.length > 0) {
         alert("¡Email already registered!");
@@ -42,7 +42,7 @@ async function createUser(){
 
     const user = {
         "name":nameInput.value,
-        "email":emailInput.value,
+        "email":emailInput.value.toLowerCase(),
         "dob":dobInput.value,
         "password":passwordInput.value,
         "role": "visitor"/**For default all the users gonna have the rol visitor */ 
